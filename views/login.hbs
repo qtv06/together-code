@@ -1,0 +1,19 @@
+<div class="contact-form">
+  <h2 class="text-center">Login</h2>
+  <form method="POST" class="form-horizontal" role="form">
+    {{#if message}}
+      <p class="alert alert-danger">{{message}}</p>
+    {{/if}}
+    <div class="form-group">
+      <label>Email address: </label>
+      <input type="email" name="email" class="form-control" placeholder="Your Email">
+    </div>
+    <div class="form-group">
+      <label>Password: </label>
+      <input type="password" name="password" class="form-control" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-info">Login</button>
+    </div>
+  </form>
+</div>
